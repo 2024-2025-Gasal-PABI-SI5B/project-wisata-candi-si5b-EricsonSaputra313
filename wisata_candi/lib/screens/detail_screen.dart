@@ -10,6 +10,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          // Detail 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: ClipRRect(
@@ -21,6 +22,19 @@ class DetailScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+          )
+          // Tombol Back
+          Padding(
+            padding : const EdgeInsets.all(16),
+            child : Container(
+              decoration: BoxDecoration(
+                color: Colors.deepPurple(100)?.withOpacity(0.8),
+                shape: BoxShape.circle,
+              ),
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back),
+              ),
+            )
           )
         ],
       ),
